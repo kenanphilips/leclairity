@@ -20,6 +20,6 @@ function activeClass() {
 }
 
 $(document).ready(function() {
-	fullPage();
-	activeClass();
+	// fullPage();
+	// activeClass();
 });
