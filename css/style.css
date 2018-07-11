@@ -5,64 +5,95 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  font-family: 'europa', sans-serif;
-  font-weight: 400;
-  position: relative;
+html, body {
+ padding: 0;
+ margin: 0;
+ width: 100%;
+ height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'europa', sans-serif;
+body {
+  font-family: 'adobe-caslon-pro', serif;
+  font-weight: 400;
+  position: relative;
+  color: #383c3e;
+}
+
+.title {
+  font-family: 'shelby', cursive;
   font-weight: 700;
-  margin-top: 0;
+  font-size: 4rem;
+  line-height: 0.8;
+  margin-bottom: 25px;
+  display: inline-block;
 }
 
 p {
-  margin-top: 0;
+  margin: 0;
+  font-size: 18px;
 }
 
 a {
   -webkit-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  text-decoration: none;
+  color: #383c3e;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+  color: inherit;
+}
+
+.center {
+  text-align: center;
+}
+
+.mw-750 {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
 }
 
 .navbar {
-  height: 50px;
+  display: block;
   width: 100%;
-  background: rgba(255,255,255, 0.9);
-  z-index: 9999;
+  z-index: 99;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.95);
   position: fixed;
 }
 
-.navbar .brand span {
+.navbar .container {
+  padding: 15px 0;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.navbar .navbar-brand a {
   font-weight: 700;
-  color: #000;
-  font-size: 25px;
-  line-height: 1;
+  color: #383c3e;
+  font-size: 30px;
+  line-height: auto;
   font-family: 'shelby', cursive;
 }
 
-.navbar .brand:hover {
-  text-decoration: none;
-  opacity: 0.5;
+.navbar .navbar-list {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
 }
 
-.navbar .nav-links a {
-  color: #000;
+.navbar .navbar-link {
+  color: #383c3e !important;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
-}
-
-.navbar .nav-links a:first-child {
-  margin-right: 15px;
-}
-
-.navbar .nav-links a:hover {
-  text-decoration: none;
-  opacity: 0.5;
+  font-family: 'proxima-nova', sans-serif;
+  margin: 0 12px;
 }
 
 .hero {
@@ -76,19 +107,6 @@ a {
   position: relative;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(48,48,48,0.5); */
-  background-image: -webkit-gradient(linear, left top, right top, from(#73DBE7), to(#F79E99));
-  background-image: -webkit-linear-gradient(left, #73DBE7 0%, #F79E99 100%);
-  background-image: -o-linear-gradient(left, #73DBE7 0%, #F79E99 100%);
-  background-image: linear-gradient(90deg, #73DBE7 0%, #F79E99 100%);
-  opacity: 0.7;
-}
-
 .hero .hero-content {
   z-index: 1;
   position: absolute;
@@ -98,6 +116,7 @@ a {
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   text-align: center;
+  width: 100%;
 }
 
 .hero-content span {
@@ -114,6 +133,8 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 15px;
 }
 
 .hero-content a {
@@ -135,7 +156,7 @@ a {
   letter-spacing: 2px;
   font-weight: bold;
   font-size: 12px;
-  font-family: 'europa', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   line-height: 1;
 }
 
@@ -156,7 +177,7 @@ a {
 .hero .hero-arrow {
   font-size: 20px;
   position: absolute;
-  bottom: 5px;
+  bottom: 25px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -165,12 +186,16 @@ a {
   margin: 0;
 }
 
-#fullpage {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.section {
+  padding: 180px 0 60px 0;
 }
 
-/* .section {
-  max-width: 600px;
-  margin: auto;
-} */
+.bg-image-1 {
+  background-image: url('https://images.unsplash.com/photo-1474859569645-e0def92b02bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f1a0c207933d3e409ed35f4000d99508&auto=format&fit=crop&w=2550&q=80');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 75px 0;
+}
