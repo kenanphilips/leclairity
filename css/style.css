@@ -271,6 +271,10 @@ form input, form textarea {
   border-radius: 0 !important;
 }
 
+form input:focus, form textarea:focus {
+  border: 1px solid #383c3e !important;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #949494;
     opacity: 1; /* Firefox */
@@ -302,6 +306,7 @@ form input, form textarea {
   -webkit-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  outline: none;
 }
 
 .button:hover {
