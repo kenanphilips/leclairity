@@ -167,6 +167,7 @@ ul {
 
 .about-bio p {
   text-align: justify;
+  margin-bottom: 3rem;
 }
 
 .about-expertise ul li {
@@ -289,7 +290,7 @@ form input:focus, form textarea:focus {
 }
 
 .footer #thank_you .title {
-  font-size: 7em !important;
+  font-size: 7rem !important;
 }
 
 @media only screen and (max-width: 768px) {
