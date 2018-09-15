@@ -342,8 +342,7 @@ form input:focus, form textarea:focus {
 }
 
 .footer .contact a {
-  border: 2px solid #383c3e;
-  padding: 10px 15px;
+  border-bottom: 2px solid #383c3e;
 }
 
 .footer .copyright {
