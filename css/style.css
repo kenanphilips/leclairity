@@ -206,6 +206,19 @@ ul {
   margin-bottom: 3rem;
 }
 
+.about-registered {
+  text-align: center;
+}
+
+.about-registered .logos {
+  padding-top: 20px;
+}
+
+.about-registered .logos img {
+  height: 60px;
+  margin: 0 15px;
+}
+
 .about-expertise ul li {
   font-size: 18px;
 }
@@ -218,6 +231,7 @@ ul {
 textarea {
   max-width: 100%;
   min-height: 192px;
+  min-width: 100%;
 }
 
 form label {
@@ -233,22 +247,27 @@ form input, form textarea {
   font-size: 14px;
   font-weight: 400;
   border-radius: 0 !important;
+  transition: border-color ease-in-out 150ms,box-shadow ease-in-out 150ms;
+  -webkit-transition: border-color ease-in-out 150ms,box-shadow ease-in-out 150ms;
+  -o-transition: border-color ease-in-out 150ms,box-shadow ease-in-out 150ms;
+  transition: border-color ease-in-out 150ms,box-shadow ease-in-out 150ms;
 }
 
 form input:focus, form textarea:focus {
-  border: 1px solid #383c3e !important;
+  box-shadow: 0 0 0 0.2rem rgba(209,209,209, 0.5) !important;
+  outline: none;
+  border-color: #D1D1D1 !important;
+
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
     color: #949494;
-    opacity: 1; /* Firefox */
+    opacity: 1;
 }
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
   color: #949494;
 }
-
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
   color: #949494;
 }
 
@@ -296,7 +315,7 @@ form input:focus, form textarea:focus {
 
 .footer .footer-social-links {
   margin: 0;
-  padding: 80px 0 20px 0;
+  padding: 40px 0 20px 0;
   list-style-type: none;
   display: inline-block;
   text-align: center;
@@ -316,7 +335,7 @@ form input:focus, form textarea:focus {
 }
 
 .footer .copyright {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   font-style: italic;
   font-size: 10px;
 }
